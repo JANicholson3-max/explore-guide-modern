@@ -1,0 +1,71 @@
+import { StyleSheet } from 'react-native';
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#000',
+  },
+  message: {
+    textAlign: 'center',
+    paddingBottom: 10,
+    color: '#fff',
+    fontSize: 16,
+  },
+  camera: {
+    flex: 1,
+  },
+  backButton: {
+    position: 'absolute',
+    top: 60,
+    left: 20,
+    zIndex: 1000,
+    backgroundColor: 'rgba(255, 255, 255, 0.15)',
+    borderRadius: 20,
+    width: 40,
+    height: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.3)',
+  },
+  backButtonText: {
+    color: '#ffffff',
+    fontSize: 24,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  buttonContainer: {
+    position: 'absolute',
+    bottom: 80,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+  },
+  captureButton: {
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    borderWidth: 2,
+    borderColor: '#ffffff',
+    borderRadius: 30,
+    paddingVertical: 18,
+    paddingHorizontal: 45,
+    minWidth: 220,
+  },
+  button: {
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    borderWidth: 2,
+    borderColor: '#ffffff',
+    borderRadius: 30,
+    paddingVertical: 18,
+    paddingHorizontal: 45,
+    minWidth: 220,
+    alignSelf: 'center',
+    marginTop: 20,
+  },
+  buttonText: {
+    color: '#ffffff',
+    fontSize: 18,
+    fontWeight: 'normal',
+    textAlign: 'center',
+    letterSpacing: 0.5,
+  },
+});

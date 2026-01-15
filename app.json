@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "Panterix Navigation",
+    "slug": "panterix-beta",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "explore-guide-modern",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": false,
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Panterix uses Face ID to quickly and securely log you in.",
+        "NSCameraUsageDescription": "We use your camera to capture a profile photo.",
+        "NSPhotoLibraryUsageDescription": "We need photo library access to choose a profile picture."
+      },
+      "bundleIdentifier": "ai.panterix.beta"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "ai.panterix.beta"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-secure-store",
+      "@react-native-community/datetimepicker"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "owner": "janicholson3",
+    "extra": {
+      "eas": {
+        "projectId": "4cebe88d-49be-49ec-821c-2cfc829c25d4"
+      }
+    }
+  }
+}
