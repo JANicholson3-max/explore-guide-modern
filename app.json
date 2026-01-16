@@ -13,7 +13,8 @@
       "infoPlist": {
         "NSFaceIDUsageDescription": "Panterix uses Face ID to quickly and securely log you in.",
         "NSCameraUsageDescription": "We use your camera to capture a profile photo.",
-        "NSPhotoLibraryUsageDescription": "We need photo library access to choose a profile picture."
+        "NSPhotoLibraryUsageDescription": "We need photo library access to choose a profile picture.",
+        "ITSAppUsesNonExemptEncryption": false
       },
       "bundleIdentifier": "ai.panterix.beta"
     },
