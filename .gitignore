@@ -37,3 +37,15 @@ google.json
 *.key
 .env
 .env.*
+
+# --- secrets / credentials (DO NOT COMMIT) ---
+credentials.json
+google.json
+apple.p8
+*.p8
+*.jks
+*.pem
+*.p12
+*.key
+.env
+.env.*
