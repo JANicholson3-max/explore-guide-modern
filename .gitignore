@@ -26,3 +26,14 @@ android
 metro-cache/
 .metro-cache-*/
 expo-env.d.ts
+# --- secrets / keys (do not commit) ---
+apple.p8
+*.p8
+*.jks
+credentials.json
+google.json
+*.pem
+*.p12
+*.key
+.env
+.env.*
