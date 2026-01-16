@@ -18,3 +18,21 @@
     }
   }
 }
+{
+  "cli": {
+    "version": ">=7.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "production": {
+      "distribution": "store",
+      "env": {},
+      "android": { "credentialsSource": "local" },
+      "autoIncrement": true
+    }
+  }
+}
