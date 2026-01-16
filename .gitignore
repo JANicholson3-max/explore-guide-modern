@@ -9,8 +9,11 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
+# Ignore assets by default…
 assets/
 
+# …but include app assets needed for builds
+!assets/**
 
 
 
