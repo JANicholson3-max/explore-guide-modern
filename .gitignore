@@ -61,3 +61,15 @@ apple.p8
 *.key
 .env
 .env.*
+
+# --- secrets / signing keys (DO NOT COMMIT) ---
+credentials.json
+my-release-key.jks
+apple.p8
+*.jks
+*.p8
+*.pem
+*.p12
+*.key
+.env
+.env.*
