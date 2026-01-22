@@ -1,50 +1,44 @@
-# ------------------------------
-# Node / Expo
-# ------------------------------
+# dependencies
 node_modules/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# Expo
 .expo/
 dist/
-npm-debug.*
 web-build/
 expo-env.d.ts
 
-# Metro cache
+# Metro caches
+.metro-health-check*
 metro-cache/
 .metro-cache-*/
-.metro-health-check*
 
-# ------------------------------
-# Assets (REQUIRED for EAS builds)
-# ------------------------------
-# Do NOT ignore assets — icons, splash screens, etc. must be committed
-# (intentionally no "assets/" ignore rule)
-
-# ------------------------------
-# iOS / Android (KEEP TRACKED)
-# ------------------------------
-# Native folders MUST be committed for EAS
-# (do not ignore ios/ or android/)
-
-# ------------------------------
-# macOS
-# ------------------------------
+# OS
 .DS_Store
 
-# ------------------------------
-# Secrets / Signing Keys (DO NOT COMMIT)
-# ------------------------------
+# ENV files
+.env
+.env.*
+*.orig.*
+
+# Native folders (CNG/prebuild on EAS)
+ios/
+android/
+
+# Signing keys / secrets (DO NOT COMMIT)
 credentials.json
 google.json
-
 apple.p8
-my-release-key.jks
-
-*.jks
 *.p8
-*.p12
+*.jks
+*.keystore
 *.pem
+*.p12
 *.key
 *.mobileprovision
 
-.env
-.env.*
+# IMPORTANT: keep assets tracked (icons/splash/backgrounds needed on EAS)
+!assets/
+!assets/**
